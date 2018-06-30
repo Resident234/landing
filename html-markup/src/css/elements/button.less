@@ -1,0 +1,208 @@
+// BUTTONS
+.button {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  .common-transition();
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ebebeb;
+    border-color: #ebebeb;
+    color: #71737b;
+  }
+  &:focus {
+    background-color: #e1e1e1;
+    border-color: #e1e1e1;
+    color: #71737b;
+  }
+  &__call-request {
+    .font(10px, @white-color, 26px);
+    .osb();
+    height: 26px;
+    border-radius: 4px;
+    background-color: @normal-green-color;
+    padding: 0 20px;
+
+    &:hover {
+      background-color: #afda41;
+      color: @white-color;
+    }
+    &:focus {
+      background-color: @green-color;
+      color: @white-color;
+    }
+    ._scroll & {
+      @media (min-width: @screen-ultra-lg-min) {
+        .font(11px, @white-color, 26px, auto, 0px);
+        height: 27px;
+      }
+    }
+    @media (min-width: @screen-lg-min) {
+      font-size: 12px;
+    }
+    @media (min-width: @screen-ultra-lg-min) {
+      width: auto;
+      height: 34px;
+      font-size: 14px;
+      line-height: 34px;
+      margin-bottom: 26px;
+    }
+  }
+  &__calculator-send-request {
+    border-radius: 9px;
+    background-color: @green-color;
+    box-shadow: 0px 19px 36.4px 3.6px rgba(16, 99, 42, 0.44);
+    height: 100%;
+    width: 100%;
+    .osb();
+    .font(43px, @white-color, 122px);
+
+    &:hover {
+      background-color: #afda41;
+    }
+    &:focus {
+      background-color: @green-color;
+    }
+    @media (min-width: @screen-lg-min) {
+      font-size: 17px;
+    }
+  }
+  &__feedback-call-request {
+    border-radius: 9px;
+    background-color: rgb(254, 203, 0);
+    box-shadow: 0px 19px 36.4px 3.6px rgba(16, 99, 42, 0.44);
+    height: 120px;
+    .osb();
+    .font(43px, @black-font-color);
+    width: 100%;
+    @media (min-width: @screen-lg-min) {
+      width: 258px;
+      height: 52px;
+      font-size: 19px;
+      border-radius: 3px;
+      box-shadow: none;
+    }
+  }
+  &__close {
+    text-decoration: none;
+    border: 2px @white-color solid;
+    opacity: 0.5;
+    width: 34px;
+    height: 34px;
+    border-radius: 20px;
+    .common-transition();
+
+    &:after {
+      content: '';
+      position: absolute;
+      background: @white-color;
+      height: 2px;
+      width: 14px;
+      transform: rotate(-45deg);
+      top: 14px;
+      left: 8px;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      background: @white-color;
+      height: 2px;
+      width: 14px;
+      transform: rotate(45deg);
+      top: 14px;
+      left: 8px;
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &__close-big {
+    text-decoration: none;
+    opacity: 1;
+    width: 38px;
+    height: 38px;
+    .common-transition();
+
+    &:after {
+      content: '';
+      position: absolute;
+      background: @white-color;
+      height: 3px;
+      width: 48px;
+      transform: rotate(-45deg);
+      top: 18px;
+      left: -4px;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      background: #ffffff;
+      height: 3px;
+      width: 48px;
+      transform: rotate(45deg);
+      top: 18px;
+      left: -4px;
+    }
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  &__program-detail {
+    .osb();
+    .font(16px, rgb(113, 115, 123));
+    text-transform: uppercase;
+    border: 2px rgb(240, 240, 240) solid;
+    border-radius: 4px;
+  }
+  &__map-block-info {
+    display: block;
+    width: 100%;
+  }
+  &__close-big-height-popup {
+    top: 9px;
+    right: -43px;
+  }
+  &__tabs {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px #ececec solid;
+    border-left-width: 0;
+    .box-sizing(border-box);
+    background: white;
+    text-transform: none;
+    .osb();
+    .font(24px, rgb(61, 61, 61), 50px);
+
+    &:first-child {
+      border-left-width: 1px;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+    &:last-child {
+      border-right-width: 1px;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+    &._active {
+      background: #0b8030;
+      border-color: #0b8030;
+      border-radius: 3px;
+      color: #ffffff;
+    }
+  }
+  &__preliminary-calculation-charges-popup {
+    .osb();
+    .font(14px, rgb(255, 255, 255), 2.143);
+    text-align: center;
+    border-radius: 4px;
+    background-color: rgb(147, 193, 28);
+    width: 196px;
+    height: 40px;
+  }
+}

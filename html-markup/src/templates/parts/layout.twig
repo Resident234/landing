@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    {% endblock %}
+
+
+    <!-- STYLES -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    {% include 'parts/favicon.twig' %}
+
+
+</head>
+
+<body>
+
+{% block header %}
+    {% include 'parts/header.twig' %}
+{% endblock %}
+
+{#BLOCKS WPAPPER#}
+<div class="blocks-wrapper js-blocks-wrapper">
+
+    {% block content %}
+    {% endblock %}
+
+    {% block footer %}
+        {% include 'parts/footer.twig' %}
+    {% endblock %}
+
+    {% block mobilemenu %}
+		{% include 'parts/mobile-menu.twig' %}
+	{% endblock %}
+
+	{% block popups %}
+        {% include 'parts/popups.twig' %}
+    {% endblock %}
+
+    <div class="__overlay js-overlay"></div>
+
+</div>
+{#/BLOCKS WPAPPER#}
+
+
+<!-- uncache -->
+<link rel="stylesheet" href="css/main.css">
+<!-- enduncache -->
+
+{% block scripts %}
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <!-- uncache -->
+    <script src="scripts/app.min.js"></script>
+    <script src="scripts/site.js"></script>
+    <!-- enduncache -->
+{% endblock %}
+
+{% block userscripts %}
+    {% include 'parts/maps.twig' %}
+{% endblock %}
+
+
+</body>
+</html>

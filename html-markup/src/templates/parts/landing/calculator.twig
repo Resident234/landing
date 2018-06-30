@@ -1,0 +1,151 @@
+{#CALCULATOR#}
+<div class="calculator-block">
+    <div class="calculator-block__container-absolute">
+        <div class="calculator-block__container container">
+            <div class="calculator-block__content">
+                <a href="#" id="calculator"></a>
+                <div class="calculator-block__wrap calculator-block__inputs">
+                    <div class="calculator-block__inputs-line-container">
+                        <div class="calculator-block__inputs-holder">
+                            <span class="calculator-block__inputs-label">Сумма сбережений</span>
+                            <div class="calculator-block__inputs-line">
+                                <div class="calculator-block__range js-calculator-block__range">
+                                    <div class="calculator-block__range-input js-calculator-block__range-input"
+                                         data-measure="Р">
+                                        <input title="" type="text"
+                                               class="calculator-block__input js-calculator-block__input text-input"/>
+                                    </div>
+                                    <div class="calculator-block__range-slider js-calculator-block__range-slider"
+                                         data-min="1000" data-max="200000"
+                                         data-val="100000" data-step="1000">
+                                    </div>
+                                    <span class="calculator-block__range-measure rub"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator-block__inputs-holder">
+                            <span class="calculator-block__inputs-label">На срок/ мес.</span>
+                            <div class="calculator-block__inputs-line js-radio-parent">
+                                <input type="radio" data-value="3" data-radio-class="checkbox-square checkbox-styled"
+                                       class="js-radio js-radio-square" name="time"
+                                       data-index="0" checked>
+                                <input type="radio" data-value="6" data-radio-class="checkbox-square checkbox-styled"
+                                       class="js-radio js-radio-square" name="time"
+                                       data-index="1">
+                                <input type="radio" data-value="12" data-radio-class="checkbox-square checkbox-styled"
+                                       class="js-radio js-radio-square" name="time"
+                                       data-index="2">
+                            </div>
+                        </div>
+                        <div class="calculator-block__inputs-holder">
+                            <span class="calculator-block__inputs-label">Ежемесячное пополнение</span>
+                            <div class="calculator-block__inputs-line">
+                                <div class="calculator-block__range js-calculator-block__range">
+                                    <div class="calculator-block__range-input js-calculator-block__range-input"
+                                         data-measure="Р">
+                                        <input title="" type="text"
+                                               class="calculator-block__input js-calculator-block__input text-input"/>
+                                    </div>
+                                    <div class="calculator-block__range-slider js-calculator-block__range-slider"
+                                         data-min="1000" data-max="200000"
+                                         data-val="2000" data-step="1000">
+                                    </div>
+                                    <span class="calculator-block__range-measure rub"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator-block__inputs-holder">
+                            <span class="calculator-block__inputs-label">Выплата процентов</span>
+
+                            <div class="calculator-block__inputs-line js-radio-parent">
+                                <input type="radio" data-value="В конце срока"
+                                       data-radio-class="checkbox-rectangle checkbox-styled"
+                                       class="js-radio js-radio-rectangle" name="percents"
+                                       data-index="0" checked>
+                                <input type="radio" data-value="Ежемесячно"
+                                       data-radio-class="checkbox-rectangle checkbox-styled"
+                                       class="js-radio js-radio-rectangle" name="percents"
+                                       data-index="1">
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="calculator-block__inputs-line-container">
+                        <div class="calculator-block__input-mark checkbox-label">
+                            <div class="checkbox-mark__container-square js-checkbox-container-square checkbox-label__checkbox-pre-container">
+                                <div class="checkbox-mark__container-mark checkbox-label__checkbox-container">
+                                    <input name="mark" value="1" type="checkbox"
+                                           class="js-checkbox js-checkbox-mark"
+                                           data-checkbox-class="checkbox-mark checkbox-label__checkbox-generated-container"
+                                           data-index="1">
+                                </div>
+                            </div>
+                            <span class="calculator-block__input-mark-label checkbox-label__label-container">
+                                <span class="calculator-block__input-mark-label-value">+1%</span> <span class="calculator-block__input-mark-label-text">к ставке <br class="hidden-lg">для пенсионеров</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="calculator-block__inputs-triangle"></div>
+                    <div class="calculator-block__inputs-send-button-container">
+                        <button class="calculator-block__inputs-send-button button button__calculator-send-request js-popup-link"
+                                data-href="#call-request-popup">Отправить заявку</button>
+                    </div>
+                </div>
+
+                <div class="calculator-block__wrap calculator-block__info">
+                    <div class="calculator-block__info-result-line">
+                        <div class="calculator-block__info-result-column">
+                            <div class="calculator-block__info-result-key">
+                                Вы получите
+                            </div>
+                            <div class="calculator-block__info-result-value">
+                                234 000 <span class="rub"></span>
+                            </div>
+                        </div>
+                        <div class="calculator-block__info-result-column">
+                            <div class="calculator-block__info-result-key">
+                                Доход
+                            </div>
+                            <div class="calculator-block__info-result-value">
+                                34 000 <span class="rub"></span>
+                            </div>
+                        </div>
+                        <div class="calculator-block__info-result-column">
+                            <div class="calculator-block__info-result-key">
+                                Ставка
+                            </div>
+                            <div class="calculator-block__info-result-value __green-text">
+                                17%
+                            </div>
+                        </div>
+                        <div class="calculator-block__info-result-column __flex-row-element--right">
+                            <div class="calculator-block__info-result-label">
+                                <span class="calculator-block__info-result-label-title">Сбережение застраховано</span>
+                                <div class="calculator-block__info-result-label-logo"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculator-block__info-links-line">
+                        <a href="#" data-href="#full-conditions" class="calculator-block__info-link link __dashed-underline js-popup-link">
+                            <span>Полные условия</span>
+                        </a>
+                        <a href="#" data-href="#preliminary-calculation-charges" class="calculator-block__info-link link __dashed-underline js-popup-link">
+                            <span>График начислений</span>
+                        </a>
+                        <a href="#" class="calculator-block__info-link link">
+                            <div class="__icon-link icon-save"></div>
+                            <span class="__solid-underline">Сохранить результат</span>
+                        </a>
+                        <a href="#" class="calculator-block__info-link link">
+                            <div class="__icon-link icon-location"></div>
+                            <span class="__dashed-underline">Посмотреть адрес на карте</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{#/CALCULATOR#}

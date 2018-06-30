@@ -1,0 +1,15 @@
+.loop_bottom(@counter) when (@counter > 0) {
+	.loop_bottom((@counter - 10));
+	.bottom__@{counter}px{
+		bottom: @counter*1px;
+	}
+}
+.loop_bottom(500);
+
+.loop_bottom__important(@counter) when (@counter > 0) {
+	.loop_bottom__important((@counter - 10));
+	.bottom__@{counter}px__important{
+		bottom: @counter*1px !important;
+	}
+}
+.loop_bottom__important(500);

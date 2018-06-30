@@ -1,0 +1,110 @@
+.form {
+  &__input-holder {
+    margin-bottom: 26px;
+    @media (min-width: @screen-lg-min) {
+      margin-bottom: 16px;
+    }
+    text-align: left;
+    width: 100%;
+    position: relative;
+  }
+  &__input {
+    .box-sizing(border-box);
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px @light-color solid;
+    .border-radius(2px);
+    background-color: @white-color;
+    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.3);
+    height: 102px;
+    line-height: 1.5;
+    .osr();
+    .font(31px, rgb(134, 133, 133));
+    padding-left: 32px;
+    padding-right: 32px;
+
+    @media (min-width: @screen-lg-min) {
+      height: 52px;
+      .border-radius(6px);
+      padding-left: 23px;
+      padding-right: 23px;
+      font-size: 16px;
+    }
+    .form__input-holder_error & {
+      border-color: #f26b21;
+      background-color: #faebe2;
+      border-radius: 4px 4px 0 0;
+    }
+    @media (min-width: @screen-lg-min) {
+      border-radius: 3px;
+    }
+  }
+}
+
+.form {
+  &__input-holder-column {
+    width: 50%;
+  }
+  &__input-holder-line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 25px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &_with-select {
+      margin-bottom: 22px;
+    }
+  }
+  &__input-holder-line-box {
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &_special {
+      margin-right: 25px;
+    }
+  }
+  &__input-holder-key {
+    margin-right: 9px;
+    color: rgba(102, 102, 102, 0.7);
+    .osr();
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  &__input-holder-value {
+    text-transform: uppercase;
+    min-width: 140px;
+    &_wide {
+      min-width: 220px;
+    }
+    &_middle {
+      min-width: 180px;
+    }
+  }
+  &__input-holder-value-text {
+    color: #222;
+    .osr();
+    font-size: 18px;
+  }
+  &__input-holder-select {
+    width: 100%;
+  }
+  &__input-holder-link {
+    display: inline;
+    font-size: @18;
+    text-transform: uppercase;
+    line-height: 1.11;
+    .osr();
+    text-decoration: none;
+    border-bottom: 1px dotted #71a62c;
+    transition: all .3s ease;
+    &:hover {
+      border-color: transparent;
+    }
+  }
+}

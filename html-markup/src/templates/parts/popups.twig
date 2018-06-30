@@ -1,0 +1,839 @@
+<div style="display: none;">
+
+    {#CALL REQUEST POPUP#}
+    <div class="box-modal" id="call-request-popup">
+        <a href="#" class="box-modal__close button__close arcticmodal-close hidden-xs hidden-sm"></a>
+
+        <div class="box-modal__content">
+            <div class="call-request-popup">
+                <form>
+                    <div class="call-request-popup__container">
+                        <p class="call-request-popup__title call-request-popup__title_big">
+                            Заявка на обратный
+                            <br>
+                            звонок
+                        </p>
+
+
+                        <div class="form__input-holder">
+                            <input type="text" class="call-request-popup__input form__input text-input"
+                                   placeholder="Имя">
+                        </div>
+                        <div class="form__input-holder">
+                            <input type="text" class="call-request-popup__input form__input text-input"
+                                   placeholder="Введите ваш номер">
+                        </div>
+
+
+                        <div class="call-request-popup__personal-info checkbox-label">
+                            <div class="checkbox-personal__container-square js-checkbox-container-square checkbox-label__checkbox-pre-container">
+                                <div class="checkbox-personal__container-personal checkbox-label__checkbox-container">
+                                    <input name="personal" value="1" type="checkbox"
+                                           class="js-checkbox js-checkbox-personal"
+                                           data-checkbox-class="checkbox-personal checkbox-label__checkbox-generated-container"
+                                           data-index="1">
+                                </div>
+                            </div>
+                            <a href="#"
+                               class="call-request-popup__input-personal-label checkbox-label__label-container link">
+                                Согласен на обработку перс. данных
+                            </a>
+                        </div>
+
+
+                        <button type="submit" class="call-request-popup__button js-popup-link button"
+                                data-href="#thanks-for-request">
+                            Перезвоните мне
+                        </button>
+                        <span class="call-request-popup__info">Перезвоним в течение 15 минут</span>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    {#/CALL REQUEST POPUP#}
+
+    {#THANKS FOR REQUEST POPUP#}
+    <div class="box-modal" id="thanks-for-request">
+        <a href="#" class="box-modal__close button__close arcticmodal-close hidden-xs hidden-sm"></a>
+
+        <div class="box-modal__content">
+            <div class="call-request-popup test-popup_thank-you">
+                <form>
+                    <div class="call-request-popup__container">
+                        <p class="call-request-popup__title __text-align--lg-center">
+                            Спасибо!
+                        </p>
+                        <p class="call-request-popup__text">
+                            Специалист перезвонит вам<br>по номеру
+                        </p>
+
+                        <span class="call-request-popup__phone-number js-phone-number-result"></span>
+
+                        <button type="submit" class="call-request-popup__button arcticmodal-close button">хорошо
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    {#/THANKS FOR REQUEST POPUP#}
+
+
+
+    {#FULL CONDITIONS#}
+    <div class="box-modal" id="full-conditions">
+        <a href="#" class="box-modal__close button__close button__close-big-height-popup arcticmodal-close hidden-xs hidden-sm"></a>
+
+        <div class="box-modal__content">
+            <div class="full-conditions-popup info-popup">
+                <div class="full-conditions-popup__container info-popup__container">
+                    <p class="full-conditions-popup__title info-popup__title">
+                        Полные условия сбережений
+                    </p>
+
+                    <div class="info-popup__holder js-tabs-content__container">
+
+                        <div class="full-conditions-popup__nav">
+                            <a href="#" class="full-conditions-popup__nav-item js-tabs-content__nav-item _active button button__tabs"
+                               data-section-id="0">Пенсионный доход</a>
+                            <a href="#" class="full-conditions-popup__nav-item js-tabs-content__nav-item button button__tabs"
+                               data-section-id="1">Семейная копилка</a>
+                            <a href="#" class="full-conditions-popup__nav-item js-tabs-content__nav-item button button__tabs"
+                               data-section-id="2">Срочный доход</a>
+                        </div>
+
+
+                        <div class="full-conditions-popup__list">
+
+                            <div class="full-conditions-popup__item info-popup__item js-tabs-content__list-item _active"
+                                 data-section-id="0">
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Максимальная ставка (tab1)
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        17% годовых
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Минимальная сумма взноса
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        От 1000 руб.
+
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Максимальная сумма взноса
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        Согласно действующему законодательству РФ
+
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Сумма пополнения
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        Без пополнения
+
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Срок размещения
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        12 месяца
+
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Выплата процентов
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        Ежемесячная или в конце срока действия договора
+
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Необходимые документы
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        Паспорт гражданина РФ, пенсионное удостоверение
+
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Пролонгация
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        Возможна
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        <span>Дополнительные взносы</span>
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        Пайщик имеет право пополнять сумму сбережения в течении срока действия
+                                        настоящего
+                                        договора, но не позднее, чем за 90 календарных дней до окончания срока действия
+                                        настоящего договора. Минимальная сумма пополнения
+                                        по договору составляет 1000 рублей
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Налогообложение
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        КПК удерживает НДФЛ с начисленных целевых компенсационных выплат по
+                                        личным сбережениям в соответствии с налоговым законодательством Российской
+                                        Федерации
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Досрочное расторжение
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        В случае досрочного снятия всей суммы сбережения, договор подлежит расторжению,
+                                        а компенсационные выплаты на сумму сбережения начисляются в размере
+                                        0,35 % годовых. Заявление, о досрочном расторжении договора, подается
+                                        Сберегателем
+                                        в письменной форме за 14 календарных дней
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Частичное снятие
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        Частичное снятие денежных средств по договору не допускается
+
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Дополнительные условия
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        Разница между суммой процентов, причитающихся Клиенту (сберегателю) в случае
+                                        досрочного расторжения договора, и суммой уже выплаченных процентов,
+                                        удерживается
+                                        из основной суммы сбережений Доход по сбережениям подлежит налогообложению
+                                        по ставке на доходы физических лиц. Сбережения принимаются только
+                                        от членов (пайщиков) кооператива в соответствии с Федеральным законом №190-ФЗ
+                                        «О кредитной кооперации»
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="full-conditions-popup__item info-popup__item js-tabs-content__list-item"
+                                 data-section-id="1">
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Максимальная ставка (tab2)
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        17% годовых
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Минимальная сумма взноса
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        От 1000 руб.
+
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Максимальная сумма взноса
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        Согласно действующему законодательству РФ
+
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Сумма пополнения
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        Без пополнения
+
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Срок размещения
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        12 месяца
+
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Выплата процентов
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        Ежемесячная или в конце срока действия договора
+
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Необходимые документы
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        Паспорт гражданина РФ, пенсионное удостоверение
+
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Пролонгация
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        Возможна
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Дополнительные взносы
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        Пайщик имеет право пополнять сумму сбережения в течении срока действия
+                                        настоящего
+                                        договора, но не позднее, чем за 90 календарных дней до окончания срока действия
+                                        настоящего договора. Минимальная сумма пополнения
+                                        по договору составляет 1000 рублей
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Налогообложение
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        КПК удерживает НДФЛ с начисленных целевых компенсационных выплат по
+                                        личным сбережениям в соответствии с налоговым законодательством Российской
+                                        Федерации
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Досрочное расторжение
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        В случае досрочного снятия всей суммы сбережения, договор подлежит расторжению,
+                                        а компенсационные выплаты на сумму сбережения начисляются в размере
+                                        0,35 % годовых. Заявление, о досрочном расторжении договора, подается
+                                        Сберегателем
+                                        в письменной форме за 14 календарных дней
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Частичное снятие
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        Частичное снятие денежных средств по договору не допускается
+
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Дополнительные условия
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        Разница между суммой процентов, причитающихся Клиенту (сберегателю) в случае
+                                        досрочного расторжения договора, и суммой уже выплаченных процентов,
+                                        удерживается
+                                        из основной суммы сбережений Доход по сбережениям подлежит налогообложению
+                                        по ставке на доходы физических лиц. Сбережения принимаются только
+                                        от членов (пайщиков) кооператива в соответствии с Федеральным законом №190-ФЗ
+                                        «О кредитной кооперации»
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="full-conditions-popup__item info-popup__item js-tabs-content__list-item"
+                                 data-section-id="2">
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Максимальная ставка (tab3)
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        17% годовых
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Минимальная сумма взноса
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        От 1000 руб.
+
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Максимальная сумма взноса
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        Согласно действующему законодательству РФ
+
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Сумма пополнения
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        Без пополнения
+
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Срок размещения
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        12 месяца
+
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Выплата процентов
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        Ежемесячная или в конце срока действия договора
+
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Необходимые документы
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        Паспорт гражданина РФ, пенсионное удостоверение
+
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Пролонгация
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        Возможна
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Дополнительные взносы
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        Пайщик имеет право пополнять сумму сбережения в течении срока действия
+                                        настоящего
+                                        договора, но не позднее, чем за 90 календарных дней до окончания срока действия
+                                        настоящего договора. Минимальная сумма пополнения
+                                        по договору составляет 1000 рублей
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Налогообложение
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        КПК удерживает НДФЛ с начисленных целевых компенсационных выплат по
+                                        личным сбережениям в соответствии с налоговым законодательством Российской
+                                        Федерации
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Досрочное расторжение
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        В случае досрочного снятия всей суммы сбережения, договор подлежит расторжению,
+                                        а компенсационные выплаты на сумму сбережения начисляются в размере
+                                        0,35 % годовых. Заявление, о досрочном расторжении договора, подается
+                                        Сберегателем
+                                        в письменной форме за 14 календарных дней
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Частичное снятие
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        Частичное снятие денежных средств по договору не допускается
+
+                                    </div>
+                                </div>
+
+                                <div class="full-conditions-popup__item-row info-popup__item-row">
+                                    <div class="full-conditions-popup__item-key info-popup__item-key">
+                                        Дополнительные условия
+                                    </div>
+                                    <div class="full-conditions-popup__item-value info-popup__item-value">
+                                        Разница между суммой процентов, причитающихся Клиенту (сберегателю) в случае
+                                        досрочного расторжения договора, и суммой уже выплаченных процентов,
+                                        удерживается
+                                        из основной суммы сбережений Доход по сбережениям подлежит налогообложению
+                                        по ставке на доходы физических лиц. Сбережения принимаются только
+                                        от членов (пайщиков) кооператива в соответствии с Федеральным законом №190-ФЗ
+                                        «О кредитной кооперации»
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    {#/FULL CONDITIONS#}
+
+
+    {#PRELIMINARY CALCULATION OF CHARGES#}
+    <div class="box-modal" id="preliminary-calculation-charges">
+        <a href="#" class="box-modal__close button__close button__close-big-height-popup arcticmodal-close hidden-xs hidden-sm"></a>
+
+        <div class="box-modal__content">
+            <div class="preliminary-calculation-charges-popup info-popup">
+
+                <div class="preliminary-calculation-charges-popup__container info-popup__container">
+                    <p class="preliminary-calculation-charges-popup__title info-popup__title">
+                        Предварительный расчёт начислений
+                    </p>
+
+                    <div class="info-popup__holder">
+                        <div class="preliminary-calculation-charges-popup__item info-popup__item _active">
+                            <div class="preliminary-calculation-charges-popup__item-row info-popup__item-row">
+                                <div class="preliminary-calculation-charges-popup__item-key info-popup__item-key">
+                                    Сумма сбережений
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__item-value info-popup__item-value">
+                                    300000 руб.
+                                </div>
+                            </div>
+
+                            <div class="preliminary-calculation-charges-popup__item-row info-popup__item-row">
+                                <div class="preliminary-calculation-charges-popup__item-key info-popup__item-key">
+                                    Процентная ставка
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__item-value info-popup__item-value">
+                                    17,0%
+                                </div>
+                            </div>
+
+                            <div class="preliminary-calculation-charges-popup__item-row info-popup__item-row">
+                                <div class="preliminary-calculation-charges-popup__item-key info-popup__item-key">
+                                    Срок сбережения
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__item-value info-popup__item-value">
+                                    123 дня
+                                </div>
+                            </div>
+
+                            <div class="preliminary-calculation-charges-popup__item-row info-popup__item-row">
+                                <div class="preliminary-calculation-charges-popup__item-key info-popup__item-key">
+                                    Выплата процентов
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__item-value info-popup__item-value">
+                                    В конце срока
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="preliminary-calculation-charges-popup__container info-popup__container">
+                    <p class="preliminary-calculation-charges-popup__title info-popup__title-small">
+                        График начислений
+                    </p>
+
+                    <div class="info-popup__holder">
+
+                        <div class="preliminary-calculation-charges-popup__header">
+                            <div class="preliminary-calculation-charges-popup__header-item info-popup__header-item">
+                                Номер месяца
+                            </div>
+                            <div class="preliminary-calculation-charges-popup__header-item info-popup__header-item">
+                                Сумма сбережений
+                            </div>
+                            <div class="preliminary-calculation-charges-popup__header-item info-popup__header-item">
+                                Пополнение
+                            </div>
+                            <div class="preliminary-calculation-charges-popup__header-item info-popup__header-item">
+                                Сумма выплаченных процентов
+                            </div>
+                        </div>
+
+                        <div class="preliminary-calculation-charges-popup__content">
+                            <div class="preliminary-calculation-charges-popup__content-row">
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    1
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    300 000,00 <span class="rub"></span>
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    0,00 <span class="rub"></span>
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    4 410,59 <span class="rub"></span>
+                                </div>
+                            </div>
+                            <div class="preliminary-calculation-charges-popup__content-row">
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    2
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    300 000,00 <span class="rub"></span>
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    0,00 <span class="rub"></span>
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    4 410,59 <span class="rub"></span>
+                                </div>
+                            </div>
+                            <div class="preliminary-calculation-charges-popup__content-row">
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    3
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    300 000,00 <span class="rub"></span>
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    0,00 <span class="rub"></span>
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    4 410,59 <span class="rub"></span>
+                                </div>
+                            </div>
+                            <div class="preliminary-calculation-charges-popup__content-row">
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    4
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    300 000,00 <span class="rub"></span>
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    0,00 <span class="rub"></span>
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    4 410,59 <span class="rub"></span>
+                                </div>
+                            </div>
+                            <div class="preliminary-calculation-charges-popup__content-row">
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    5
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    300 000,00 <span class="rub"></span>
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    0,00 <span class="rub"></span>
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    4 410,59 <span class="rub"></span>
+                                </div>
+                            </div>
+                            <div class="preliminary-calculation-charges-popup__content-row">
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    6
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    300 000,00 <span class="rub"></span>
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    0,00 <span class="rub"></span>
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    4 410,59 <span class="rub"></span>
+                                </div>
+                            </div>
+                            <div class="preliminary-calculation-charges-popup__content-row">
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    7
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    300 000,00 <span class="rub"></span>
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    0,00 <span class="rub"></span>
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    4 410,59 <span class="rub"></span>
+                                </div>
+                            </div>
+                            <div class="preliminary-calculation-charges-popup__content-row">
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    8
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    300 000,00 <span class="rub"></span>
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    0,00 <span class="rub"></span>
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    4 410,59 <span class="rub"></span>
+                                </div>
+                            </div>
+                            <div class="preliminary-calculation-charges-popup__content-row">
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    9
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    300 000,00 <span class="rub"></span>
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    0,00 <span class="rub"></span>
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    4 410,59 <span class="rub"></span>
+                                </div>
+                            </div>
+                            <div class="preliminary-calculation-charges-popup__content-row">
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    10
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    300 000,00 <span class="rub"></span>
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    0,00 <span class="rub"></span>
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    4 410,59 <span class="rub"></span>
+                                </div>
+                            </div>
+                            <div class="preliminary-calculation-charges-popup__content-row">
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    11
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    300 000,00 <span class="rub"></span>
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    0,00 <span class="rub"></span>
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    4 410,59 <span class="rub"></span>
+                                </div>
+                            </div>
+                            <div class="preliminary-calculation-charges-popup__content-row">
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    12
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    300 000,00 <span class="rub"></span>
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    0,00 <span class="rub"></span>
+                                </div>
+                                <div class="preliminary-calculation-charges-popup__content-item info-popup__content-item">
+                                    4 410,59 <span class="rub"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="preliminary-calculation-charges-popup__footer">
+                            <div class="preliminary-calculation-charges-popup__footer-item info-popup__footer-item">
+                                Итого:
+                            </div>
+                            <div class="preliminary-calculation-charges-popup__footer-item info-popup__footer-item">
+                                452 359,90 <span class="rub"></span>
+                            </div>
+                            <div class="preliminary-calculation-charges-popup__footer-item info-popup__footer-item">
+                                0,00 <span class="rub"></span>
+                            </div>
+                            <div class="preliminary-calculation-charges-popup__footer-item info-popup__footer-item">
+                                78 460,27 <span class="rub"></span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="preliminary-calculation-charges-popup__container preliminary-calculation-charges-popup__note-button-block">
+                    <div class="preliminary-calculation-charges-popup__note-text">
+                        Данный расчет носит исключительно информационный характер,
+                        показывающий динамику начислений по сбережению.
+                    </div>
+                    <button class="button button__preliminary-calculation-charges-popup">
+                        Распечатать
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    {#/PRELIMINARY CALCULATION OF CHARGES#}
+
+
+</div>

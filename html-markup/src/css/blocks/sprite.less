@@ -1,0 +1,457 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@checkbox-marker-mobile-name: 'checkbox-marker-mobile';
+@checkbox-marker-mobile-x: 201px;
+@checkbox-marker-mobile-y: 0px;
+@checkbox-marker-mobile-offset-x: -201px;
+@checkbox-marker-mobile-offset-y: 0px;
+@checkbox-marker-mobile-width: 93px;
+@checkbox-marker-mobile-height: 100px;
+@checkbox-marker-mobile-total-width: 463px;
+@checkbox-marker-mobile-total-height: 278px;
+@checkbox-marker-mobile-image: '../img/sprite.png';
+@checkbox-marker-mobile: 201px 0px -201px 0px 93px 100px 463px 278px '../img/sprite.png' 'checkbox-marker-mobile';
+@checkbox-marker-name: 'checkbox-marker';
+@checkbox-marker-x: 416px;
+@checkbox-marker-y: 68px;
+@checkbox-marker-offset-x: -416px;
+@checkbox-marker-offset-y: -68px;
+@checkbox-marker-width: 27px;
+@checkbox-marker-height: 29px;
+@checkbox-marker-total-width: 463px;
+@checkbox-marker-total-height: 278px;
+@checkbox-marker-image: '../img/sprite.png';
+@checkbox-marker: 416px 68px -416px -68px 27px 29px 463px 278px '../img/sprite.png' 'checkbox-marker';
+@checkbox-personal-mobile-name: 'checkbox-personal-mobile';
+@checkbox-personal-mobile-x: 314px;
+@checkbox-personal-mobile-y: 68px;
+@checkbox-personal-mobile-offset-x: -314px;
+@checkbox-personal-mobile-offset-y: -68px;
+@checkbox-personal-mobile-width: 34px;
+@checkbox-personal-mobile-height: 36px;
+@checkbox-personal-mobile-total-width: 463px;
+@checkbox-personal-mobile-total-height: 278px;
+@checkbox-personal-mobile-image: '../img/sprite.png';
+@checkbox-personal-mobile: 314px 68px -314px -68px 34px 36px 463px 278px '../img/sprite.png' 'checkbox-personal-mobile';
+@checkbox-personal-name: 'checkbox-personal';
+@checkbox-personal-x: 396px;
+@checkbox-personal-y: 124px;
+@checkbox-personal-offset-x: -396px;
+@checkbox-personal-offset-y: -124px;
+@checkbox-personal-width: 17px;
+@checkbox-personal-height: 18px;
+@checkbox-personal-total-width: 463px;
+@checkbox-personal-total-height: 278px;
+@checkbox-personal-image: '../img/sprite.png';
+@checkbox-personal: 396px 124px -396px -124px 17px 18px 463px 278px '../img/sprite.png' 'checkbox-personal';
+@header-logo-fixed-name: 'header-logo-fixed';
+@header-logo-fixed-x: 314px;
+@header-logo-fixed-y: 0px;
+@header-logo-fixed-offset-x: -314px;
+@header-logo-fixed-offset-y: 0px;
+@header-logo-fixed-width: 149px;
+@header-logo-fixed-height: 48px;
+@header-logo-fixed-total-width: 463px;
+@header-logo-fixed-total-height: 278px;
+@header-logo-fixed-image: '../img/sprite.png';
+@header-logo-fixed: 314px 0px -314px 0px 149px 48px 463px 278px '../img/sprite.png' 'header-logo-fixed';
+@header-logo-lg-name: 'header-logo-lg';
+@header-logo-lg-x: 0px;
+@header-logo-lg-y: 158px;
+@header-logo-lg-offset-x: 0px;
+@header-logo-lg-offset-y: -158px;
+@header-logo-lg-width: 158px;
+@header-logo-lg-height: 52px;
+@header-logo-lg-total-width: 463px;
+@header-logo-lg-total-height: 278px;
+@header-logo-lg-image: '../img/sprite.png';
+@header-logo-lg: 0px 158px 0px -158px 158px 52px 463px 278px '../img/sprite.png' 'header-logo-lg';
+@header-logo-mobile-name: 'header-logo-mobile';
+@header-logo-mobile-x: 0px;
+@header-logo-mobile-y: 79px;
+@header-logo-mobile-offset-x: 0px;
+@header-logo-mobile-offset-y: -79px;
+@header-logo-mobile-width: 180px;
+@header-logo-mobile-height: 59px;
+@header-logo-mobile-total-width: 463px;
+@header-logo-mobile-total-height: 278px;
+@header-logo-mobile-image: '../img/sprite.png';
+@header-logo-mobile: 0px 79px 0px -79px 180px 59px 463px 278px '../img/sprite.png' 'header-logo-mobile';
+@header-logo-name: 'header-logo';
+@header-logo-x: 0px;
+@header-logo-y: 0px;
+@header-logo-offset-x: 0px;
+@header-logo-offset-y: 0px;
+@header-logo-width: 181px;
+@header-logo-height: 59px;
+@header-logo-total-width: 463px;
+@header-logo-total-height: 278px;
+@header-logo-image: '../img/sprite.png';
+@header-logo: 0px 0px 0px 0px 181px 59px 463px 278px '../img/sprite.png' 'header-logo';
+@icon-location-name: 'icon-location';
+@icon-location-x: 314px;
+@icon-location-y: 168px;
+@icon-location-offset-x: -314px;
+@icon-location-offset-y: -168px;
+@icon-location-width: 20px;
+@icon-location-height: 27px;
+@icon-location-total-width: 463px;
+@icon-location-total-height: 278px;
+@icon-location-image: '../img/sprite.png';
+@icon-location: 314px 168px -314px -168px 20px 27px 463px 278px '../img/sprite.png' 'icon-location';
+@icon-save-name: 'icon-save';
+@icon-save-x: 314px;
+@icon-save-y: 124px;
+@icon-save-offset-x: -314px;
+@icon-save-offset-y: -124px;
+@icon-save-width: 24px;
+@icon-save-height: 24px;
+@icon-save-total-width: 463px;
+@icon-save-total-height: 278px;
+@icon-save-image: '../img/sprite.png';
+@icon-save: 314px 124px -314px -124px 24px 24px 463px 278px '../img/sprite.png' 'icon-save';
+@label-logo-name: 'label-logo';
+@label-logo-x: 0px;
+@label-logo-y: 230px;
+@label-logo-offset-x: 0px;
+@label-logo-offset-y: -230px;
+@label-logo-width: 155px;
+@label-logo-height: 48px;
+@label-logo-total-width: 463px;
+@label-logo-total-height: 278px;
+@label-logo-image: '../img/sprite.png';
+@label-logo: 0px 230px 0px -230px 155px 48px 463px 278px '../img/sprite.png' 'label-logo';
+@list-marker-mobile-name: 'list-marker-mobile';
+@list-marker-mobile-x: 368px;
+@list-marker-mobile-y: 68px;
+@list-marker-mobile-offset-x: -368px;
+@list-marker-mobile-offset-y: -68px;
+@list-marker-mobile-width: 28px;
+@list-marker-mobile-height: 31px;
+@list-marker-mobile-total-width: 463px;
+@list-marker-mobile-total-height: 278px;
+@list-marker-mobile-image: '../img/sprite.png';
+@list-marker-mobile: 368px 68px -368px -68px 28px 31px 463px 278px '../img/sprite.png' 'list-marker-mobile';
+@list-marker-name: 'list-marker';
+@list-marker-x: 358px;
+@list-marker-y: 124px;
+@list-marker-offset-x: -358px;
+@list-marker-offset-y: -124px;
+@list-marker-width: 18px;
+@list-marker-height: 20px;
+@list-marker-total-width: 463px;
+@list-marker-total-height: 278px;
+@list-marker-image: '../img/sprite.png';
+@list-marker: 358px 124px -358px -124px 18px 20px 463px 278px '../img/sprite.png' 'list-marker';
+@checkbox-marker-mobile-2x-name: 'checkbox-marker-mobile@2x';
+@checkbox-marker-mobile-2x-x: 402px;
+@checkbox-marker-mobile-2x-y: 0px;
+@checkbox-marker-mobile-2x-offset-x: -402px;
+@checkbox-marker-mobile-2x-offset-y: 0px;
+@checkbox-marker-mobile-2x-width: 186px;
+@checkbox-marker-mobile-2x-height: 200px;
+@checkbox-marker-mobile-2x-total-width: 926px;
+@checkbox-marker-mobile-2x-total-height: 556px;
+@checkbox-marker-mobile-2x-image: '../img/sprite@2x.png';
+@checkbox-marker-mobile-2x: 402px 0px -402px 0px 186px 200px 926px 556px '../img/sprite@2x.png' 'checkbox-marker-mobile@2x';
+@checkbox-marker-2x-name: 'checkbox-marker@2x';
+@checkbox-marker-2x-x: 832px;
+@checkbox-marker-2x-y: 136px;
+@checkbox-marker-2x-offset-x: -832px;
+@checkbox-marker-2x-offset-y: -136px;
+@checkbox-marker-2x-width: 54px;
+@checkbox-marker-2x-height: 58px;
+@checkbox-marker-2x-total-width: 926px;
+@checkbox-marker-2x-total-height: 556px;
+@checkbox-marker-2x-image: '../img/sprite@2x.png';
+@checkbox-marker-2x: 832px 136px -832px -136px 54px 58px 926px 556px '../img/sprite@2x.png' 'checkbox-marker@2x';
+@checkbox-personal-mobile-2x-name: 'checkbox-personal-mobile@2x';
+@checkbox-personal-mobile-2x-x: 628px;
+@checkbox-personal-mobile-2x-y: 136px;
+@checkbox-personal-mobile-2x-offset-x: -628px;
+@checkbox-personal-mobile-2x-offset-y: -136px;
+@checkbox-personal-mobile-2x-width: 68px;
+@checkbox-personal-mobile-2x-height: 72px;
+@checkbox-personal-mobile-2x-total-width: 926px;
+@checkbox-personal-mobile-2x-total-height: 556px;
+@checkbox-personal-mobile-2x-image: '../img/sprite@2x.png';
+@checkbox-personal-mobile-2x: 628px 136px -628px -136px 68px 72px 926px 556px '../img/sprite@2x.png' 'checkbox-personal-mobile@2x';
+@checkbox-personal-2x-name: 'checkbox-personal@2x';
+@checkbox-personal-2x-x: 792px;
+@checkbox-personal-2x-y: 248px;
+@checkbox-personal-2x-offset-x: -792px;
+@checkbox-personal-2x-offset-y: -248px;
+@checkbox-personal-2x-width: 34px;
+@checkbox-personal-2x-height: 36px;
+@checkbox-personal-2x-total-width: 926px;
+@checkbox-personal-2x-total-height: 556px;
+@checkbox-personal-2x-image: '../img/sprite@2x.png';
+@checkbox-personal-2x: 792px 248px -792px -248px 34px 36px 926px 556px '../img/sprite@2x.png' 'checkbox-personal@2x';
+@header-logo-fixed-2x-name: 'header-logo-fixed@2x';
+@header-logo-fixed-2x-x: 628px;
+@header-logo-fixed-2x-y: 0px;
+@header-logo-fixed-2x-offset-x: -628px;
+@header-logo-fixed-2x-offset-y: 0px;
+@header-logo-fixed-2x-width: 298px;
+@header-logo-fixed-2x-height: 96px;
+@header-logo-fixed-2x-total-width: 926px;
+@header-logo-fixed-2x-total-height: 556px;
+@header-logo-fixed-2x-image: '../img/sprite@2x.png';
+@header-logo-fixed-2x: 628px 0px -628px 0px 298px 96px 926px 556px '../img/sprite@2x.png' 'header-logo-fixed@2x';
+@header-logo-lg-2x-name: 'header-logo-lg@2x';
+@header-logo-lg-2x-x: 0px;
+@header-logo-lg-2x-y: 316px;
+@header-logo-lg-2x-offset-x: 0px;
+@header-logo-lg-2x-offset-y: -316px;
+@header-logo-lg-2x-width: 316px;
+@header-logo-lg-2x-height: 104px;
+@header-logo-lg-2x-total-width: 926px;
+@header-logo-lg-2x-total-height: 556px;
+@header-logo-lg-2x-image: '../img/sprite@2x.png';
+@header-logo-lg-2x: 0px 316px 0px -316px 316px 104px 926px 556px '../img/sprite@2x.png' 'header-logo-lg@2x';
+@header-logo-mobile-2x-name: 'header-logo-mobile@2x';
+@header-logo-mobile-2x-x: 0px;
+@header-logo-mobile-2x-y: 158px;
+@header-logo-mobile-2x-offset-x: 0px;
+@header-logo-mobile-2x-offset-y: -158px;
+@header-logo-mobile-2x-width: 360px;
+@header-logo-mobile-2x-height: 118px;
+@header-logo-mobile-2x-total-width: 926px;
+@header-logo-mobile-2x-total-height: 556px;
+@header-logo-mobile-2x-image: '../img/sprite@2x.png';
+@header-logo-mobile-2x: 0px 158px 0px -158px 360px 118px 926px 556px '../img/sprite@2x.png' 'header-logo-mobile@2x';
+@header-logo-2x-name: 'header-logo@2x';
+@header-logo-2x-x: 0px;
+@header-logo-2x-y: 0px;
+@header-logo-2x-offset-x: 0px;
+@header-logo-2x-offset-y: 0px;
+@header-logo-2x-width: 362px;
+@header-logo-2x-height: 118px;
+@header-logo-2x-total-width: 926px;
+@header-logo-2x-total-height: 556px;
+@header-logo-2x-image: '../img/sprite@2x.png';
+@header-logo-2x: 0px 0px 0px 0px 362px 118px 926px 556px '../img/sprite@2x.png' 'header-logo@2x';
+@icon-location-2x-name: 'icon-location@2x';
+@icon-location-2x-x: 628px;
+@icon-location-2x-y: 336px;
+@icon-location-2x-offset-x: -628px;
+@icon-location-2x-offset-y: -336px;
+@icon-location-2x-width: 40px;
+@icon-location-2x-height: 54px;
+@icon-location-2x-total-width: 926px;
+@icon-location-2x-total-height: 556px;
+@icon-location-2x-image: '../img/sprite@2x.png';
+@icon-location-2x: 628px 336px -628px -336px 40px 54px 926px 556px '../img/sprite@2x.png' 'icon-location@2x';
+@icon-save-2x-name: 'icon-save@2x';
+@icon-save-2x-x: 628px;
+@icon-save-2x-y: 248px;
+@icon-save-2x-offset-x: -628px;
+@icon-save-2x-offset-y: -248px;
+@icon-save-2x-width: 48px;
+@icon-save-2x-height: 48px;
+@icon-save-2x-total-width: 926px;
+@icon-save-2x-total-height: 556px;
+@icon-save-2x-image: '../img/sprite@2x.png';
+@icon-save-2x: 628px 248px -628px -248px 48px 48px 926px 556px '../img/sprite@2x.png' 'icon-save@2x';
+@label-logo-2x-name: 'label-logo@2x';
+@label-logo-2x-x: 0px;
+@label-logo-2x-y: 460px;
+@label-logo-2x-offset-x: 0px;
+@label-logo-2x-offset-y: -460px;
+@label-logo-2x-width: 310px;
+@label-logo-2x-height: 96px;
+@label-logo-2x-total-width: 926px;
+@label-logo-2x-total-height: 556px;
+@label-logo-2x-image: '../img/sprite@2x.png';
+@label-logo-2x: 0px 460px 0px -460px 310px 96px 926px 556px '../img/sprite@2x.png' 'label-logo@2x';
+@list-marker-mobile-2x-name: 'list-marker-mobile@2x';
+@list-marker-mobile-2x-x: 736px;
+@list-marker-mobile-2x-y: 136px;
+@list-marker-mobile-2x-offset-x: -736px;
+@list-marker-mobile-2x-offset-y: -136px;
+@list-marker-mobile-2x-width: 56px;
+@list-marker-mobile-2x-height: 62px;
+@list-marker-mobile-2x-total-width: 926px;
+@list-marker-mobile-2x-total-height: 556px;
+@list-marker-mobile-2x-image: '../img/sprite@2x.png';
+@list-marker-mobile-2x: 736px 136px -736px -136px 56px 62px 926px 556px '../img/sprite@2x.png' 'list-marker-mobile@2x';
+@list-marker-2x-name: 'list-marker@2x';
+@list-marker-2x-x: 716px;
+@list-marker-2x-y: 248px;
+@list-marker-2x-offset-x: -716px;
+@list-marker-2x-offset-y: -248px;
+@list-marker-2x-width: 36px;
+@list-marker-2x-height: 40px;
+@list-marker-2x-total-width: 926px;
+@list-marker-2x-total-height: 556px;
+@list-marker-2x-image: '../img/sprite@2x.png';
+@list-marker-2x: 716px 248px -716px -248px 36px 40px 926px 556px '../img/sprite@2x.png' 'list-marker@2x';
+@spritesheet-width: 463px;
+@spritesheet-height: 278px;
+@spritesheet-image: '../img/sprite.png';
+@spritesheet-sprites: @checkbox-marker-mobile @checkbox-marker @checkbox-personal-mobile @checkbox-personal @header-logo-fixed @header-logo-lg @header-logo-mobile @header-logo @icon-location @icon-save @label-logo @list-marker-mobile @list-marker;
+@spritesheet: 463px 278px '../img/sprite.png' @spritesheet-sprites;
+@retina-spritesheet-width: 926px;
+@retina-spritesheet-height: 556px;
+@retina-spritesheet-image: '../img/sprite@2x.png';
+@retina-spritesheet-sprites: @checkbox-marker-mobile-2x @checkbox-marker-2x @checkbox-personal-mobile-2x @checkbox-personal-2x @header-logo-fixed-2x @header-logo-lg-2x @header-logo-mobile-2x @header-logo-2x @icon-location-2x @icon-save-2x @label-logo-2x @list-marker-mobile-2x @list-marker-2x;
+@retina-spritesheet: 926px 556px '../img/sprite@2x.png' @retina-spritesheet-sprites;
+
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+@checkbox-marker-mobile-group-name: 'checkbox-marker-mobile';
+@checkbox-marker-mobile-group: 'checkbox-marker-mobile' @checkbox-marker-mobile @checkbox-marker-mobile-2x;
+@checkbox-marker-group-name: 'checkbox-marker';
+@checkbox-marker-group: 'checkbox-marker' @checkbox-marker @checkbox-marker-2x;
+@checkbox-personal-mobile-group-name: 'checkbox-personal-mobile';
+@checkbox-personal-mobile-group: 'checkbox-personal-mobile' @checkbox-personal-mobile @checkbox-personal-mobile-2x;
+@checkbox-personal-group-name: 'checkbox-personal';
+@checkbox-personal-group: 'checkbox-personal' @checkbox-personal @checkbox-personal-2x;
+@header-logo-fixed-group-name: 'header-logo-fixed';
+@header-logo-fixed-group: 'header-logo-fixed' @header-logo-fixed @header-logo-fixed-2x;
+@header-logo-lg-group-name: 'header-logo-lg';
+@header-logo-lg-group: 'header-logo-lg' @header-logo-lg @header-logo-lg-2x;
+@header-logo-mobile-group-name: 'header-logo-mobile';
+@header-logo-mobile-group: 'header-logo-mobile' @header-logo-mobile @header-logo-mobile-2x;
+@header-logo-group-name: 'header-logo';
+@header-logo-group: 'header-logo' @header-logo @header-logo-2x;
+@icon-location-group-name: 'icon-location';
+@icon-location-group: 'icon-location' @icon-location @icon-location-2x;
+@icon-save-group-name: 'icon-save';
+@icon-save-group: 'icon-save' @icon-save @icon-save-2x;
+@label-logo-group-name: 'label-logo';
+@label-logo-group: 'label-logo' @label-logo @label-logo-2x;
+@list-marker-mobile-group-name: 'list-marker-mobile';
+@list-marker-mobile-group: 'list-marker-mobile' @list-marker-mobile @list-marker-mobile-2x;
+@list-marker-group-name: 'list-marker';
+@list-marker-group: 'list-marker' @list-marker @list-marker-2x;
+@retina-groups: @checkbox-marker-mobile-group @checkbox-marker-group @checkbox-personal-mobile-group @checkbox-personal-group @header-logo-fixed-group @header-logo-lg-group @header-logo-mobile-group @header-logo-group @icon-location-group @icon-save-group @label-logo-group @list-marker-mobile-group @list-marker-group;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `retina-sprite` class sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+@icon-home-group: 'icon-home' @icon-home @icon-home-2x;
+
+.icon-home {
+  .retina-sprite(@icon-home-group);
+}
+*/
+.sprite-background-size(@sprite) {
+  @sprite-total-width: extract(@sprite, 7);
+  @sprite-total-height: extract(@sprite, 8);
+  background-size: @sprite-total-width @sprite-total-height;
+}
+
+.retina-sprite(@retina-group) {
+  @normal-sprite: extract(@retina-group, 2);
+  @retina-sprite: extract(@retina-group, 3);
+  .sprite(@normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    .sprite-image(@retina-sprite);
+    .sprite-background-size(@normal-sprite);
+  }
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}
+
+/*
+The `.retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in LESS
+
+.retina-sprites(@retina-groups);
+*/
+.retina-sprites(@retina-groups, @i: 1) when (@i <= length(@retina-groups)) {
+  @retina-group: extract(@retina-groups, @i);
+  @sprite-name: e(extract(@retina-group, 1));
+  .@{sprite-name} {
+    .retina-sprite(@retina-group);
+  }
+  .retina-sprites(@retina-groups, @i + 1);
+}

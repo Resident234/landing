@@ -1,0 +1,11 @@
+//= ../bower_components/modernizr.js
+//= ../bower_components/jquery/dist/jquery.min.js
+//= ../bower_components/iCheck/icheck.min.js
+//= ../bower_components/chosen/chosen.jquery.js
+//= ../bower_components/jquery.highlight/jquery.highlight.js
+//= ../bower_components/arcticmodalbw/arcticmodal/jquery.arcticmodal.min.js
+//= ../bower_components/jquery.maskedinput/dist/jquery.maskedinput.min.js
+//= ../bower_components/jquery-validation/dist/jquery.validate.min.js
+//= ../bower_components/jquery-ui/jquery-ui.min.js
+//= ../bower_components/jquery.ui.touch-punch.min.js
+//= ../bower_components/chosen-custom.jquery.js

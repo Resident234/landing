@@ -1,0 +1,16 @@
+.blocks-wrapper {
+	overflow: hidden;
+	position: relative;
+    padding-top: @header-height-mobile;
+	@media (min-width: @screen-lg-min) {
+		padding-top: @header-height-lg;
+	}
+	@media (min-width: @screen-ultra-lg-min) {
+		padding-top: @header-height;
+	}
+	._scroll & {
+		@media (min-width: @screen-ultra-lg-min) {
+			padding-top: @header-height-fixed;
+		}
+	}
+}

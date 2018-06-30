@@ -1,0 +1,33 @@
+<noindex>
+    <script>
+        $(function () {
+            ymaps.ready(init);
+
+            var myMap,
+                myPlacemark,
+                geolocation;
+
+            function init() {
+                geolocation = ymaps.geolocation;
+
+                myMap = new ymaps.Map("map", {
+                    center: [54.323007, 48.400784],
+                    zoom: 16,
+                    controls: []
+                }, {
+                    searchControlProvider: 'yandex#search'
+                });
+
+                myPlacemark = window.myPlacemark = new ymaps.Placemark(myMap.getCenter(), {}, {
+                    iconLayout: 'default#image',
+                    iconImageClipRect: [[0, 0], [105, 151]],
+                    iconImageHref: 'img/sprite_map.png',
+                    iconImageSize: [105 / 2, 151 / 2],
+                    iconImageOffset: [-(105 / 4), -(151 / 2)]
+                });
+
+                myMap.geoObjects.add(myPlacemark);
+            }
+        });
+    </script>
+</noindex>

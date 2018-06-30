@@ -1,0 +1,29 @@
+// BUTTONS
+.checkbox-label {
+  vertical-align: middle;
+  .flex-row();
+  &__checkbox{
+    &-pre-container{
+      position: relative;
+      background-color: @white-color;
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer;
+      .box-sizing(border-box);
+    }
+    &-container{
+      position: absolute;
+    }
+    &-generated-container{
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+    }
+  }
+  &__label-container{
+    margin-left: 32px;
+    @media (min-width: @screen-lg-min) {
+      margin-left: 8px;
+    }
+  }
+}

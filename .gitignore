@@ -1,0 +1,11 @@
+/bitrix/
+/bitrix
+/upload/
+/upload
+
+node_modules/
+.idea/
+.htaccess
+/.htaccess
+/sitemap.xml
+robots.txt
