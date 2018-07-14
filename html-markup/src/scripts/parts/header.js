@@ -13,7 +13,6 @@ $(function () {
         });
 
         function headerMove(scrollTop) {
-            console.log(scrollTop);
             if (scrollTop > 10) {
                 $body.addClass('_scroll');
             }

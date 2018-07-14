@@ -1,6 +1,8 @@
 //= parts/default.js
 //= parts/header.js
 //= site.js
+//= ajax_success_init.js
+//= validate.js
 //= parts/menu.js
 //= parts/input-sliders.js
 //= parts/popups.js

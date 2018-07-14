@@ -20,12 +20,14 @@
   &__wrap {
     display: flex;
     flex-direction: column;
-    margin-top: 62px;
     @media (min-width: @screen-lg-min) {
       flex-direction: row;
     }
   }
-  &__phone-wrap{
+  &__pre-wrap{
+    margin-top: 62px;
+  }
+  &__phone-pre-wrap{
     @media (min-width: @screen-lg-min) {
       margin-top: 35px;
     }
@@ -87,6 +89,9 @@
       font-size: 13px;
       margin-top: 14px;
     }
+  }
+  &__error{
+    margin-bottom: 10px;
   }
   &__input {
     .osr();
