@@ -1,1 +1,2 @@
 # landing
+Simple landing template
